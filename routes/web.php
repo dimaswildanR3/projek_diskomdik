@@ -105,10 +105,10 @@ Route::delete('/kategori-video/{kategori}', [KategoriVideoController::class, 'de
 Route::get('/kategori-gambar', [KategoriGambarController::class, 'index'])->name('kategori-gambar.index');
 Route::get('/kategori-gambar/create', [KategoriGambarController::class, 'create'])->name('kategori-gambar.create');
 Route::post('/kategori-gambar', [KategoriGambarController::class, 'store'])->name('kategori-gambar.store');
-Route::get('/kategori-gambar/{kategori}', [KategoriGambarController::class, 'show'])->name('kategori-gambar.show');
-Route::get('/kategori-gambar/{kategori}/edit', [KategoriGambarController::class, 'edit'])->name('kategori-gambar.edit');
-Route::put('/kategori-gambar/{kategori}', [KategoriGambarController::class, 'update'])->name('kategori-gambar.update');
-Route::delete('/kategori-gambar/{kategori}', [KategoriGambarController::class, 'destroy'])->name('kategori-gambar.destroy');
+Route::get('/kategori-gambar/{kategoriGambar}', [KategoriGambarController::class, 'show'])->name('kategori-gambar.show');
+Route::get('/kategori-gambar/{kategoriGambar}/edit', [KategoriGambarController::class, 'edit'])->name('kategori-gambar.edit');
+Route::put('/kategori-gambar/{kategoriGambar}', [KategoriGambarController::class, 'update'])->name('kategori-gambar.update');
+Route::delete('/kategori-gambar/{kategoriGambar}', [KategoriGambarController::class, 'destroy'])->name('kategori-gambar.destroy');
 
 // Rute untuk Kontak
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak.index');

@@ -45,7 +45,7 @@
       </a>
       <ul class="menu-sub">
         <li class="menu-item">
-          <a href="{{ url('/galeri/gambar/kategori') }}" class="menu-link">
+          <a href="{{ url('/kategori-gambar') }}" class="menu-link">
             <div>Kategori Gambar</div>
           </a>
         </li>
